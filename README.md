@@ -12,6 +12,13 @@ This is a **working, browser-local demo**, not a production registration system.
 
 The demo persists only in the current browser's `localStorage`; it does not sync devices. Use **Organizer → Groups** to create a group code, assign group allocations per shift, then **Register → I have a group code** to test. Use **Organizer → Shifts** to edit times/capacities and **Settings** to set the actual donation checkout URL, event location, organizer email, and instructions. All starting shift times/capacities are **illustrative placeholders** and must be verified.
 
+## Version 2 changes
+
+- Public registration is a three-step flow: choose shifts, add primary contact and volunteers, review and confirm.
+- Add Volunteer appears below the volunteer entry cards. The public registration page no longer shows the donation prompt; it remains on the success page.
+- Header logo sits on a light background to preserve its dark artwork, and page sections no longer overlap the hero.
+- Organizer Overview includes expandable adult/minor, shift, and group breakdowns with volunteer names.
+
 ## What's in the demo
 
 - Five configurable shifts (3 packing, setup, teardown), one packing shift per registration, optional setup/teardown.
