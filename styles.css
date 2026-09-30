@@ -7,3 +7,34 @@
 /* Per-shift demographic summary shown when a shift is expanded. */
 .shift-demographics{display:flex;align-items:center;gap:10px 20px;flex-wrap:wrap;margin:12px 20px 2px;padding:12px 14px;background:#f4f6f0;border-radius:9px;color:#263441;font-size:14px}
 .shift-demographics span{color:#52665a}
+
+/* V5: consistent contact input and optional post-registration donation */
+#contact-name{width:100%;border:1px solid #cfd5cf;border-radius:9px;padding:11px;background:#fff;color:#263441;min-width:0;min-height:44px}
+.donation-step{text-align:center;max-width:780px;margin:0 auto 22px}
+.donation-step>p{max-width:610px;margin:12px auto 22px}
+.donation-invite{background:#f3e5c7;border:1px solid #e8d5ad;border-radius:14px;padding:26px 22px;margin:22px auto;max-width:680px}
+.donation-invite h2{max-width:520px;margin:8px auto 12px;line-height:1.3}
+.donation-invite>p{max-width:540px;margin:10px auto;line-height:1.6}
+.donation-icon{color:#966d2c;font-size:38px;line-height:1}
+.donation-invite .amounts{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px 0 12px}
+.donation-invite .donation-amount{min-width:110px;background:#fff;border-color:#d5a34e;font-size:19px}
+.donation-invite .donation-amount:hover{background:#d5a34e}
+.donation-step>#view-confirmation,.donation-step>#skip-donation{display:flex;max-width:680px;margin:10px auto;width:100%}
+.donation-reminder{text-align:center;padding:14px}.donation-reminder p{margin:0}.donation-reminder a{font-weight:700;color:#79571d}
+@media(max-width:650px){.donation-invite{padding:20px 14px}.donation-invite .donation-amount{min-width:85px;flex:1}.donation-step>#view-confirmation,.donation-step>#skip-donation{font-size:13px}}
+
+/* V6: Donation is the final section, after the complete registration confirmation. */
+.donation-last{text-align:center;background:#f3e5c7;border-color:#e8d5ad;padding:28px 22px}
+.donation-last h2{max-width:650px;margin:10px auto 12px;line-height:1.3}
+.donation-last>p{max-width:630px;margin:10px auto;line-height:1.6}
+.donation-last .amounts{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px 0 12px}
+.donation-last .donation-amount{min-width:110px;background:#fff;border-color:#d5a34e;font-size:19px}
+.donation-last .donation-amount:hover{background:#d5a34e}
+@media(max-width:650px){.donation-last{padding:22px 14px}.donation-last .donation-amount{min-width:85px;flex:1}}
+
+/* V7: optional sponsorship inquiry on the final confirmation screen. */
+.sponsor-cta{margin:24px auto 0;padding:22px 0 0;border-top:1px solid #d8c49d;max-width:740px}
+.sponsor-cta h3{margin:0 0 8px;color:#263441}.sponsor-cta>p{max-width:560px;margin:0 auto 16px;line-height:1.55}
+.sponsor-toggle{background:#263441;color:white;border-color:#263441}.sponsor-panel{margin:18px auto 0;padding:20px;background:#fff;border:1px solid #decda9;border-radius:12px;text-align:left}
+.sponsor-panel .btn{margin-top:16px}.sponsor-note{margin:12px 0 0}.sponsor-panel .notice{margin-bottom:0}
+@media(max-width:650px){.sponsor-panel{padding:14px}.sponsor-panel .btn{width:100%}}

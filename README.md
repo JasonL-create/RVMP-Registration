@@ -52,3 +52,24 @@ This package is **phase 1 UI/demo + phase 2 database schema groundwork**. It doe
 ### Version 4 interface change
 
 The organizer overview no longer includes a separate Volunteer breakdown list. Expanding a shift now shows its adult/minor counts and percentages above the attendee names. Overall adult/minor metric cards remain visible.
+
+## Version 5 changes
+- Primary contact full-name field now has the same text-input styling and width as email and phone.
+- After completing registration, an optional gold-highlighted donation invitation appears before the volunteer schedule. The registration is already saved; Skip and Continue both show the confirmation.
+- Donation amounts link to the organizer-configurable donation URL. They do not prefill a checkout amount unless the donation provider supports that separately.
+- A small optional donation link remains on the final confirmation.
+- The current prototype still uses local browser storage; do not accept real registrations until secure shared storage is connected.
+
+## Version 6 changes
+- Registration confirmation and full schedule are shown immediately after submitting.
+- The optional gold donation invitation is the **last** section, after shift details, arrival instructions, calendar downloads, and the option to register another family.
+- Donation buttons now navigate directly to the configured donation page in the same tab; there is no need to return to finish registration.
+- Removed the intermediate donation screen and Skip/Continue controls.
+- The browser-local preview still does not send emails/texts or save across devices.
+
+## Version 7: business sponsorship interest
+- After the final confirmation and donation options, visitors can expand a business sponsorship inquiry form.
+- Collects contact name, business name, email, and phone. The form **does not save or transmit these fields to a server**.
+- Until Supabase/email delivery is connected, the form opens a **pre-addressed email draft** using the organizer contact email configured in Organizer → Settings. The visitor must send the draft in their email application.
+- If no organizer email is configured, the form shows a clear message instead of implying submission.
+- Before launch, replace the mailto handoff with a secured backend endpoint that sends email and records inquiry status, including rate limiting and spam protection.
