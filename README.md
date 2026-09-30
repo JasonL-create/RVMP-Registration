@@ -73,3 +73,7 @@ The organizer overview no longer includes a separate Volunteer breakdown list. E
 - Until Supabase/email delivery is connected, the form opens a **pre-addressed email draft** using the organizer contact email configured in Organizer → Settings. The visitor must send the draft in their email application.
 - If no organizer email is configured, the form shows a clear message instead of implying submission.
 - Before launch, replace the mailto handoff with a secured backend endpoint that sends email and records inquiry status, including rate limiting and spam protection.
+
+## Version 8
+
+Added a heart-shaped Donate shortcut to the top navigation. It opens an optional donation information screen with $50, $100, and Other links to the configured donation page. Visitors can return to their registration without losing the in-progress form. Donation links open in the same tab. No payment is processed in this app.

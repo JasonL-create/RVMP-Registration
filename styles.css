@@ -38,3 +38,11 @@
 .sponsor-toggle{background:#263441;color:white;border-color:#263441}.sponsor-panel{margin:18px auto 0;padding:20px;background:#fff;border:1px solid #decda9;border-radius:12px;text-align:left}
 .sponsor-panel .btn{margin-top:16px}.sponsor-note{margin:12px 0 0}.sponsor-panel .notice{margin-bottom:0}
 @media(max-width:650px){.sponsor-panel{padding:14px}.sponsor-panel .btn{width:100%}}
+
+/* V8: prominent donation shortcut, including a compact mobile navigation layout. */
+.headnav .donate-nav{display:inline-flex;align-items:center;justify-content:center;gap:7px;border-color:#d7a650;color:#f2c66e;font-weight:750}
+.headnav .donate-nav.active,.headnav .donate-nav:hover{background:#d7a650;color:#263441}
+.heart-icon{font-size:19px;line-height:1}
+.donation-landing{max-width:790px;margin:0 auto 18px}
+.donation-landing #return-to-registration{margin-top:15px}
+@media(max-width:650px){.headnav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.headnav button{width:100%}.headnav .donate-nav{grid-column:1/-1;padding:11px 10px;font-size:14px}.donation-landing #return-to-registration{width:100%}}
