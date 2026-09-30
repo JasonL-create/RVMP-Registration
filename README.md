@@ -1,3 +1,5 @@
+> **Deployment note:** This is a local-only preview, not a live registration service. Do not collect actual volunteer personal information until the Supabase backend, organizer authentication, and secure registration endpoints are connected. No emails or texts are sent.
+
 # Rogue Valley MobilePack — Registration prototype
 
 This is a **working, browser-local demo**, not a production registration system. It uses the uploaded RVMP logo, slate/gold/sage palette, and static HTML/CSS/JS. No npm, build step, server, or Supabase account is required to preview it.
@@ -46,3 +48,7 @@ The demo persists only in the current browser's `localStorage`; it does not sync
 ## Important limitations
 
 This package is **phase 1 UI/demo + phase 2 database schema groundwork**. It does not send emails or texts, cannot protect organizer data, cannot offer verified registration lookups, and does not collect actual donations. A GitHub Pages deployment is **not ready for live volunteer registrations**.
+
+### Version 4 interface change
+
+The organizer overview no longer includes a separate Volunteer breakdown list. Expanding a shift now shows its adult/minor counts and percentages above the attendee names. Overall adult/minor metric cards remain visible.
