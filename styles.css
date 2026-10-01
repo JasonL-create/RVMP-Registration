@@ -98,3 +98,13 @@ input[type=text],input[type=email],input[type=tel],input[type=number],input[type
   input:not([type]),input[type=text],input[type=email],input[type=tel],input[type=number],input[type=date],input[type=time],input[type=password],input[type=url],input[type=search],select{font-size:16px}
   .registration-flow>.steps{padding:13px 12px;margin-bottom:10px}
 }
+
+/* V20 — align the entire site to the registration form width.
+   .shell includes 22px side padding, so 1024px produces a 980px content column. */
+.shell{max-width:1024px}
+
+@media(max-width:650px){
+  .shell{max-width:none}
+}
+
+.save-status{display:inline-block;margin-left:12px;font-weight:700;color:#526b58;vertical-align:middle}
