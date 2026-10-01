@@ -79,3 +79,22 @@ label.field{margin:12px 0 6px}
 .admin-search input[type=search]{height:40px;min-height:40px;width:100%}
 .group-code-panel input{height:var(--control-height)}
 @media(max-width:650px){input[type=text],input[type=email],input[type=tel],input[type=number],input[type=date],input[type=time],input[type=password],input[type=url],select{font-size:16px}}
+
+
+/* V19 — final form-control audit + separated registration stepper */
+input:not([type]),
+input[type=text],input[type=email],input[type=tel],input[type=number],input[type=date],input[type=time],input[type=password],input[type=url],input[type=search],select{
+  display:block;width:100%;height:var(--control-height);min-height:var(--control-height);
+  border:1px solid var(--control-border);border-radius:var(--control-radius);
+  padding:0 var(--control-pad-x);background:#fff;color:#263441;min-width:0;line-height:1.2
+}
+/* Search is intentionally styled as a search container, but its field uses the same typography. */
+.admin-search input[type=search]{height:38px;min-height:38px;border:0;border-radius:0;padding:0 4px;background:transparent}
+.registration-flow{max-width:980px;margin:0 auto 20px}
+.registration-flow>.steps{background:#fff;border:1px solid #e6e4dd;border-radius:14px;padding:16px 22px;margin:0 0 14px;box-shadow:0 4px 18px #26344108}
+.registration-flow>.registration-card{margin:0}
+.registration-flow .wizard-panel{max-width:none}
+@media(max-width:650px){
+  input:not([type]),input[type=text],input[type=email],input[type=tel],input[type=number],input[type=date],input[type=time],input[type=password],input[type=url],input[type=search],select{font-size:16px}
+  .registration-flow>.steps{padding:13px 12px;margin-bottom:10px}
+}
