@@ -77,3 +77,8 @@ The organizer overview no longer includes a separate Volunteer breakdown list. E
 ## Version 8
 
 Added a heart-shaped Donate shortcut to the top navigation. It opens an optional donation information screen with $50, $100, and Other links to the configured donation page. Visitors can return to their registration without losing the in-progress form. Donation links open in the same tab. No payment is processed in this app.
+
+
+## V18
+- Unified form control sizing across public registration, sponsor, organizer, groups, sessions, settings, and login.
+- Family/individual registration now filters session cards by active + registration_open every render, preventing organizer-loaded hidden sessions from reappearing after navigation.
