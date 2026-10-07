@@ -82,3 +82,9 @@ Added a heart-shaped Donate shortcut to the top navigation. It opens an optional
 ## V18
 - Unified form control sizing across public registration, sponsor, organizer, groups, sessions, settings, and login.
 - Family/individual registration now filters session cards by active + registration_open every render, preventing organizer-loaded hidden sessions from reappearing after navigation.
+
+
+## V28
+- Closed sponsor inquiries are hidden from the active list.
+- Added Show Closed to access archived sponsor inquiries.
+- Closed inquiries can be reopened by changing status to New or Contacted.
