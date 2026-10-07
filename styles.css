@@ -110,3 +110,28 @@ input[type=text],input[type=email],input[type=tel],input[type=number],input[type
 .save-status{display:inline-block;margin-left:12px;font-weight:700;color:#526b58;vertical-align:middle}
 
 .section-rule{border:0;border-top:1px solid var(--line,#ddd);margin:34px 0 28px}.invite-organizer-form{display:grid;grid-template-columns:1fr 1fr auto;gap:14px;align-items:end;margin:16px 0}.invite-action{display:flex;align-items:end}.invite-action .btn{min-height:48px;white-space:nowrap}.organizer-list{border:1px solid var(--line,#ddd);border-radius:14px;overflow:hidden;margin-top:14px}.organizer-row{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 16px;border-bottom:1px solid var(--line,#ddd)}.organizer-row:last-child{border-bottom:0}.smallbtn{padding:9px 12px;min-height:auto}.status-pill{display:inline-flex;align-items:center;border-radius:999px;padding:5px 9px;font-size:.82rem;font-weight:700}.status-pill.open{background:#e7f0e7;color:#35613f}.status-pill.hidden-public{background:#f6ead1;color:#785817}@media(max-width:760px){.invite-organizer-form{grid-template-columns:1fr}.organizer-row{align-items:flex-start;flex-direction:column}.organizer-row>.row{width:100%;justify-content:space-between}}
+
+/* V25 — compact session management cards + persistent ordering */
+.session-edit-list{display:grid;gap:12px;margin-top:14px}
+.session-edit-card{border:2px solid #34434d;border-radius:12px;background:#fff;overflow:hidden}
+.session-edit-card.is-open{border-color:#263441;box-shadow:0 3px 12px #26344112}
+.session-edit-summary{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:stretch;background:#fff}
+.session-summary-main{appearance:none;border:0;background:transparent;color:#263441;text-align:left;padding:15px 16px;display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;width:100%}
+.session-summary-main:hover{background:#f8f7f3}
+.session-summary-main strong{font-size:15px}.session-chevron{font-size:25px;line-height:1;color:#6b7770;transition:transform .15s}
+.session-edit-card.is-open .session-chevron{transform:rotate(90deg)}
+.session-order-actions{display:flex;align-items:center;gap:6px;padding:10px 12px;border-left:1px solid #d9ddd7}
+.order-btn{min-width:42px;padding:8px 11px;font-size:18px;line-height:1}.order-btn:disabled{opacity:.3;cursor:not-allowed}
+.session-edit-body{border:0;border-top:1px solid #cfd5cf;border-radius:0;margin:0;padding:16px;background:#fcfcfa}
+@media(max-width:650px){.session-edit-summary{grid-template-columns:1fr}.session-order-actions{border-left:0;border-top:1px solid #e1e3df;justify-content:flex-end;padding:8px 12px}.session-summary-main{padding:13px 12px}.session-edit-body{padding:12px}}
+
+/* V26 — registration lookup + sponsor inquiry admin */
+.lookup-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:end}
+.lookup-help{margin-top:18px}
+.lookup-volunteers{display:grid;gap:8px;margin-bottom:18px}
+.lookup-person{display:flex;justify-content:space-between;gap:16px;padding:10px 12px;border:1px solid #dedbd2;border-radius:10px}
+.lookup-session{padding:13px 0;border-bottom:1px solid #e5e1d7}
+.sponsor-admin-list{display:grid;gap:12px;margin-top:16px}
+.sponsor-admin-card{display:flex;justify-content:space-between;gap:20px;align-items:center;border:1.5px solid #34414d;border-radius:12px;padding:15px 16px;background:#fff}
+.sponsor-admin-actions select{min-width:140px}
+@media(max-width:650px){.lookup-row{grid-template-columns:1fr}.lookup-row .btn{width:100%}.sponsor-admin-card{align-items:stretch;flex-direction:column}.sponsor-admin-actions select{width:100%}}
