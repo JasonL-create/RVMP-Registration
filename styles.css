@@ -135,3 +135,12 @@ input[type=text],input[type=email],input[type=tel],input[type=number],input[type
 .sponsor-admin-card{display:flex;justify-content:space-between;gap:20px;align-items:center;border:1.5px solid #34414d;border-radius:12px;padding:15px 16px;background:#fff}
 .sponsor-admin-actions select{min-width:140px}
 @media(max-width:650px){.lookup-row{grid-template-columns:1fr}.lookup-row .btn{width:100%}.sponsor-admin-card{align-items:stretch;flex-direction:column}.sponsor-admin-actions select{width:100%}}
+
+/* V29 landing, policy consent, and confirmation policy graphic */
+.brand{gap:0}
+.brand>span:not(.brand-art){display:none}
+.policy-check{align-items:flex-start;margin-top:14px;padding:14px 16px;border:1px solid #d8d6cf;border-radius:12px;background:#faf9f5}
+.policy-check input{margin-top:4px;flex:0 0 auto}
+.policy-check a{text-decoration:underline;font-weight:700}
+.confirmation-policies{text-align:center}
+.confirmation-policies img{display:block;width:100%;max-width:760px;height:auto;margin:0 auto 12px;border-radius:12px;border:1px solid #e1ded5}
