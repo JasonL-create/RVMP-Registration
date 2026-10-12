@@ -144,3 +144,14 @@ input[type=text],input[type=email],input[type=tel],input[type=number],input[type
 .policy-check a{text-decoration:underline;font-weight:700}
 .confirmation-policies{text-align:center}
 .confirmation-policies img{display:block;width:100%;max-width:760px;height:auto;margin:0 auto 12px;border-radius:12px;border:1px solid #e1ded5}
+
+/* V31 — partnership explanation and consistent contact footer */
+.partnership-note{background:#f7f8f5;border:1px solid #ccd6d0;border-left:5px solid #bf9a45;border-radius:12px;padding:19px 21px;margin-bottom:24px;color:#263441}
+.partnership-note h3{margin:4px 0 12px}.partnership-note p{margin:9px 0;line-height:1.55}
+.partnership-eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:#667b71}
+.partnership-emphasis{font-weight:700;background:#eaf0eb;padding:11px 13px;border-radius:8px}
+.partnership-help{font-size:14px}.partnership-help a,.footer-contact a{overflow-wrap:anywhere;text-decoration:underline}
+.footer-contact{display:grid;gap:6px;margin:0 auto 14px;padding:0 14px;font-size:14px}
+.footer-contact>span{font-weight:700}.footer-contact>div{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap}
+.footer-copy{background:transparent;border:1px solid currentColor;border-radius:6px;color:inherit;cursor:pointer;padding:4px 10px;font:inherit;font-size:12px}
+@media(max-width:650px){.partnership-note{padding:15px}}
