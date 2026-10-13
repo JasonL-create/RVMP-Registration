@@ -88,3 +88,6 @@ Added a heart-shaped Donate shortcut to the top navigation. It opens an optional
 - Closed sponsor inquiries are hidden from the active list.
 - Added Show Closed to access archived sponsor inquiries.
 - Closed inquiries can be reopened by changing status to New or Contacted.
+
+
+V32: Fixed Complete Registration button failing because Step 3 attempted to read the email-opt checkbox that was moved to Step 2. Step 2 choice is preserved. No SQL changes.
