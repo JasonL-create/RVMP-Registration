@@ -155,3 +155,8 @@ input[type=text],input[type=email],input[type=tel],input[type=number],input[type
 .footer-contact>span{font-weight:700}.footer-contact>div{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap}
 .footer-copy{background:transparent;border:1px solid currentColor;border-radius:6px;color:inherit;cursor:pointer;padding:4px 10px;font:inherit;font-size:12px}
 @media(max-width:650px){.partnership-note{padding:15px}}
+
+/* Intro screen separates the partnership announcement from session selection. */
+.partnership-intro .partnership-note{margin-bottom:20px}
+.partnership-intro .wizard-actions{display:flex;justify-content:flex-end;margin-top:22px}
+.intro-back{display:block;margin-top:16px;font-size:.9rem}
