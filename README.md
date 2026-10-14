@@ -95,3 +95,7 @@ V32: Fixed Complete Registration button failing because Step 3 attempted to read
 
 ## V35 cache refresh
 JavaScript and CSS have versioned filenames (`app-v35.js`, `styles-v35.css`) to avoid stale browser caches. Upload all files, including index.html, and verify the new filenames appear on GitHub Pages.
+
+
+## V36 donation campaign
+All donation buttons use https://give.fmsc.org/campaign/2611-103te-medford-or-rogue-valley/c773722. This overrides any old URL in the Supabase event settings; the settings field shows the current campaign URL. No SQL migration required.
