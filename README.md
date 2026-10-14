@@ -91,3 +91,7 @@ Added a heart-shaped Donate shortcut to the top navigation. It opens an optional
 
 
 V32: Fixed Complete Registration button failing because Step 3 attempted to read the email-opt checkbox that was moved to Step 2. Step 2 choice is preserved. No SQL changes.
+
+
+## V35 cache refresh
+JavaScript and CSS have versioned filenames (`app-v35.js`, `styles-v35.css`) to avoid stale browser caches. Upload all files, including index.html, and verify the new filenames appear on GitHub Pages.
