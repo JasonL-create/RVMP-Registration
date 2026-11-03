@@ -101,3 +101,6 @@ JavaScript and CSS have versioned filenames (`app-v35.js`, `styles-v35.css`) to 
 
 ## V36 donation campaign
 All donation buttons use https://give.fmsc.org/campaign/2611-103te-medford-or-rogue-valley/c773722. This overrides any old URL in the Supabase event settings; the settings field shows the current campaign URL. No SQL migration required.
+
+
+V38: Fixed organizer dashboard fetching by paging all Supabase tables in batches of 500, including volunteers and volunteer_sessions. No SQL changes.
