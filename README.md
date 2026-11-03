@@ -1,3 +1,5 @@
+V37 — Organizer dashboard data pagination fix. All organizer data tables are loaded in 500-row pages, avoiding Supabase PostgREST 1,000-row response truncation. No SQL changes required. Upload index.html, app-v37.js, styles-v37.css and assets to GitHub Pages. Note: older app-v36.js and styles-v36.css files may be removed.
+
 > **Deployment note:** This is a local-only preview, not a live registration service. Do not collect actual volunteer personal information until the Supabase backend, organizer authentication, and secure registration endpoints are connected. No emails or texts are sent.
 
 # Rogue Valley MobilePack — Registration prototype
